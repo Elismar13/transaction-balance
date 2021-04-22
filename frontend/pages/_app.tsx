@@ -1,4 +1,4 @@
-import { AppProps } from 'next/app'
+import { AppProps } from 'next/app';
 
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   html, body, #root {
     height: 100vh;
     width: 100vw;
-    font-size: 16px;
+    font-size: 62,5%;
   }
   body {
     background: white;
@@ -22,13 +22,8 @@ const GlobalStyle = createGlobalStyle`
   }
   :root {
     --side-bar-color: #5DB9FF;
-    --borders-color: #c5c5c5;
-    --dashboard-area-color: #EEEEEE;
-    --dashboard-cards-container: #fafafa;
-    --selectd-button: rgb(13, 189, 101);
-    --ambient-card-background-color: #fafafa;
-    --sensor-card-background-color: #bae452;
-    --superior-bar-color: #EEEEEE;
+    --container-color:#e1cfff;
+    --wrapper-color: #e9e9e9;
   }
 `;
 
@@ -36,17 +31,17 @@ const theme = {
   colors: {
     primary: '#0070f3',
   },
-}
+};
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-     <GlobalStyle />
+      <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
