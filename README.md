@@ -2,7 +2,8 @@
 
   <img alt="Aplicação" src="./frontend/.github/application.png" width="600px" />
   <br/>
-  transaction-balance
+  <br/>
+  Transaction Manager
 </h2>
 
 <p align="center">
